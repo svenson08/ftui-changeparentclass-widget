@@ -26,8 +26,12 @@ ATTRIBUTE:
     data-classes : Die Bootstrap Farbklasse je Status    
 */
 
+function depends_changeparentclass (){
+    var deps = [];
+    return deps;
+};
 
-var Modul_ChangeParentClass = function () {
+var Modul_changeparentclass = function () {
 
     function init() {
         var me = this;
@@ -59,7 +63,7 @@ var Modul_ChangeParentClass = function () {
         });
     };
     return $.extend(new Modul_widget(), {
-        widgetname: 'ChangeParentClass',
+        widgetname: 'changeparentclass',
         init:init,        
         update: update,
     });
